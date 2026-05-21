@@ -256,6 +256,6 @@ export const LUCIDLY_DATA: LucidlyData = {
     { label: 'Execution', href: '#allocate' },
     { label: 'Research', href: 'https://research.lucidly.finance/', external: true },
     { label: 'Docs', href: 'https://docs.lucidly.finance/', external: true },
-    { label: 'Blogs', href: 'https://www.lucidly.finance/blog', external: true },
+    { label: 'Blogs', href: 'http://blogs.lucidly.finance/', external: true },
   ],
 }
