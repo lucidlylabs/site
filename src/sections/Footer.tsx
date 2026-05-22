@@ -2,6 +2,11 @@ import type { ReactNode } from 'react'
 import { LucidlyLogo } from '../components/Brand'
 import { LiveClock } from '../components/primitives'
 import { Icon } from '../components/icons'
+import { AppStoreBadge, PlayStoreBadge } from '../components/AppBadge'
+
+const APP_STORE_URL =
+  'https://apps.apple.com/in/app/lucidly-defi-earn-platform/id6761696081'
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=finance.lucidly.app'
 
 /* ---------- Social icons (current brand marks, monochrome, inherit currentColor) ---------- */
 
@@ -70,12 +75,16 @@ export function Footer() {
             borderBottom: '1px solid var(--line)',
           }}
         >
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
             <LucidlyLogo width={100} />
             <p style={{ fontSize: 13, color: 'var(--ink-4)', lineHeight: 1.6, maxWidth: 420, margin: 0 }}>
               Institutional execution for tokenized onchain strategies. Engineered structured products on a
               permissioned vault stack.
             </p>
+            <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+              <AppStoreBadge href={APP_STORE_URL} height={40} />
+              <PlayStoreBadge href={PLAY_STORE_URL} height={40} />
+            </div>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 12 }}>
             <a

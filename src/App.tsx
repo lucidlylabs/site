@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { RiskBanner } from './sections/RiskBanner'
 import { Nav } from './sections/Nav'
 import { Hero } from './sections/Hero'
+import { AppDownload } from './sections/AppDownload'
 import { Frame } from './sections/Frame'
 import { Strategies } from './sections/Strategies'
 import { ExecutionEngine } from './sections/ExecutionEngine'
@@ -22,6 +23,7 @@ export function App() {
       <Nav />
       <main>
         <Hero />
+        <AppDownload />
         <Frame />
         <Strategies />
         <ExecutionEngine />
